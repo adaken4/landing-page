@@ -1,0 +1,28 @@
+* {
+    color: #f9faf8;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #1f2937;
+    padding: 0 150px;
+}
+
+ul p {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 0 5px
+}
