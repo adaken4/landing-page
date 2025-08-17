@@ -2,18 +2,19 @@
   color: #f9faf8;
   font-family: "Roboto";
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   background-color: #1f2937;
-  padding: 0 150px;
+  padding: 10px clamp(20px, 8vw, 150px);
 }
 
-ul p {
+ul.logo {
   font-size: 24px;
   font-weight: 900;
 }
@@ -25,4 +26,49 @@ ul li {
 ul li a {
   text-decoration: none;
   margin: 0 5px;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px clamp(20px, 8vw, 150px);
+}
+
+.hero .left, .hero .right {
+  width: 50%;
+}
+
+.hero .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .right img {
+  border: 3px solid #f9faf8;
+  object-fit: cover;
+}
+
+.hero .left h1 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.hero .left p {
+  font-size: 18px;
+}
+
+.hero .left button {
+  background-color: #3882f6;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+  cursor: pointer;
 }
